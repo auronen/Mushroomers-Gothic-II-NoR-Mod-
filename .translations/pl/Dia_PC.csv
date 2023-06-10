@@ -636,5 +636,5 @@
 "Scripts/Content/Story/Dialoge/DIA_PC_NastasSanna.d:312","Вам, наверное, интересно, почему некоторые рамки пустые?","","","False","dia_nastassanna_emptyframes_19_00","",""
 "Scripts/Content/Story/Dialoge/DIA_PC_NastasSanna.d:313","Просто не всем актерам охота было спокойно висеть на стенке, некоторые решили погулять по острову. ","","","False","dia_nastassanna_emptyframes_19_01","",""
 "Scripts/Content/Story/Dialoge/DIA_PC_NastasSanna.d:314","Да и мне тут сидеть недосуг.","","","False","dia_nastassanna_emptyframes_19_02","",""
-"Scripts/Content/Story/Dialoge/DIA_PC_Valerych.d:19","Найди кого-нибудь другого, кого ты сможешь доставать своими вопросами.","Jeśli chcesz komuś zawracać głowę, to poszukaj sobię kogoś innego.","","False","dia_mortis_mr_perm_13_00","",""
+"Scripts/Content/Story/Dialoge/DIA_PC_Valerych.d:19","Найди кого-нибудь другого, кого ты сможешь доставать своими вопросами.","Jeśli chcesz komuś zawracać głowę, to poszukaj sobie kogoś innego.","","False","dia_mortis_mr_perm_13_00","",""
 "Scripts/Content/Story/Events/EVT_LOST.d:25","БАГ","","","False","nobug.name","",""
