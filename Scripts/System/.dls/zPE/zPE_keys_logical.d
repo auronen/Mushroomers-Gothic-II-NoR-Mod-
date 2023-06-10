@@ -1,0 +1,29 @@
+// zParserExtender - logical keys macro variables for DLS implementation
+
+var int GAME_LEFT;
+var int GAME_RIGHT;
+var int GAME_UP;
+var int GAME_DOWN;
+var int GAME_ACTION;
+var int GAME_SLOW;
+var int GAME_ACTION2;
+var int GAME_WEAPON;
+var int GAME_SMOVE;
+var int GAME_SMOVE2;
+var int GAME_SHIFT;
+var int GAME_END;
+var int GAME_INVENTORY;
+var int GAME_LOOK;
+var int GAME_SNEAK;
+var int GAME_STRAFELEFT;
+var int GAME_STRAFERIGHT;
+var int GAME_SCREEN_STATUS;
+var int GAME_SCREEN_LOG;
+var int GAME_SCREEN_MAP;
+var int GAME_LOOK_FP;
+var int GAME_LOCK_TARGET;
+var int GAME_PARADE;
+var int GAME_ACTIONLEFT;
+var int GAME_ACTIONRIGHT;
+var int GAME_LAME_POTION;
+var int GAME_LAME_HEAL;
