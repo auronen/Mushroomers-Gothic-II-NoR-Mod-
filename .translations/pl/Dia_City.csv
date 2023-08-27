@@ -1115,7 +1115,7 @@
 "Scripts/Content/Story/Dialoge/City/DIA_Vlk_Bosper.d:168","Ты можешь измерить длину этих клыков и выписать сертификат?","Czy możesz zmierzyć długość tych kłów i nadać im certyfikat?","","False","dia_bosper_talbin_canmeasuretusk.description","",""
 "Scripts/Content/Story/Dialoge/City/DIA_Vlk_Bosper.d:180","Ты можешь измерить длину этих клыков и выписать сертификат?","Czy możesz zmierzyć długość tych kłów i nadać im certyfikat?","","False","dia_bosper_talbin_canmeasuretusk_07_00","",""
 "Scripts/Content/Story/Dialoge/City/DIA_Vlk_Bosper.d:181","Разумеется! Для тебя - всего 25 золотых.","Pewnie! Będzie cię to kosztować jedynie 25 sztuk złota.","","False","dia_bosper_talbin_canmeasuretusk_11_01","",""
-"Scripts/Content/Story/Dialoge/City/DIA_Vlk_Bosper.d:192","Измерь эти клыки. (25 зол.)","Zmierz te kły. (25 szt. zł.)","","False","dia_bosper_talbin_measuretusk.description","",""
+"Scripts/Content/Story/Dialoge/City/DIA_Vlk_Bosper.d:192","Измерь эти клыки. (25 зол.)","Zmierz te kły. (25 szt. złota)","","False","dia_bosper_talbin_measuretusk.description","",""
 "Scripts/Content/Story/Dialoge/City/DIA_Vlk_Bosper.d:206","Измерь эти клыки.","Zmierz te kły.","","False","dia_bosper_talbin_measuretusk_07_00","",""
 "Scripts/Content/Story/Dialoge/City/DIA_Vlk_Bosper.d:209","Минутку... Так. Ого! Четыре и одна двенадцатая пальца!","Jeszcze chwilę... już. Nieźle! Cztery i jedna dwunasta palca!","","False","dia_bosper_talbin_measuretusk_11_01","",""
 "Scripts/Content/Story/Dialoge/City/DIA_Vlk_Bosper.d:210","А этот еще длиннее, четыре и одна десятая!","A te są jeszcze dłuższe, cztery i jedna dziesiąta!","","False","dia_bosper_talbin_measuretusk_11_02","",""
