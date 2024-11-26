@@ -2749,7 +2749,7 @@ func string STR_Upper(var string str) {
 /* Не знаю, должен ли я был очистить...
  * Но почему бы и нет? */
  
-//*
+/*
 func int MEMINT_GetBuf_8K_Sub() {
     var zCList buf[1024];
     return buf;
@@ -2759,7 +2759,7 @@ func int MEMINT_GetBuf_8K() {
     MEMINT_StackPopInst();
     MEMINT_StackPushInst(zPAR_TOK_PUSHINT);
 };
-//*/
+*/
 
 //************************************************
 // Поиск символов
