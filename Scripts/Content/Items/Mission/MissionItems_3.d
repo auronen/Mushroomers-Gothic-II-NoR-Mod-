@@ -256,6 +256,11 @@ instance ItWr_Astronomy_Mis(C_Item)
 
 var int Astronomy_once;
 
+const string Astronomy_1 = "... но когда сила быка объединяется с началом воина, нужно опасаться грядущих событий.";
+const string Astronomy_2 = "Высвободившаяся сила быка и настойчивость воина могут нарушить древний баланс сил. Космическая граница между измерениями становится слабой - столь слабой, что теневые твари Белиара получают возможность проникнуть в наш мир.";
+const string Astronomy_3 = "Что может произойти вследствие этого, известно нам из истории войн древних времен, когда связь между мирами была еще сильна. Эти отродья зла несли смерть и разрушения нашему миру, и благодаря Избранному и Инносу мир был избавлен от этого зла.";
+const string Astronomy_4 = "Если такая угроза когда-либо возникнет опять, то да поможет нам Иннос, ибо мир не видел Избранного Инноса уже многие сотни лет.";
+
 func void Use_Astronomy()
 {
 	var int nDocID;
@@ -266,12 +271,12 @@ func void Use_Astronomy()
 	Doc_SetFont(nDocID,-1,FONT_Book);
 	Doc_SetMargins(nDocID,0,275,20,30,20,1);
 	Doc_PrintLine(nDocID,0,"");
-	Doc_PrintLines(nDocID,0,"... но когда сила быка объединяется с началом воина, нужно опасаться грядущих событий.");
-	Doc_PrintLines(nDocID,0,"Высвободившаяся сила быка и настойчивость воина могут нарушить древний баланс сил. Космическая граница между измерениями становится слабой - столь слабой, что теневые твари Белиара получают возможность проникнуть в наш мир.");
+	Doc_PrintLines(nDocID,0,Astronomy_1);
+	Doc_PrintLines(nDocID,0,Astronomy_2);
 	Doc_SetMargins(nDocID,-1,30,20,275,20,1);
 	Doc_PrintLine(nDocID,1,"");
-	Doc_PrintLines(nDocID,1,"Что может произойти вследствие этого, известно нам из истории войн древних времен, когда связь между мирами была еще сильна. Эти отродья зла несли смерть и разрушения нашему миру, и благодаря Избранному и Инносу мир был избавлен от этого зла.");
-	Doc_PrintLines(nDocID,1,"Если такая угроза когда-либо возникнет опять, то да поможет нам Иннос, ибо мир не видел Избранного Инноса уже многие сотни лет.");
+	Doc_PrintLines(nDocID,1,Astronomy_3);
+	Doc_PrintLines(nDocID,1,Astronomy_4);
 	Doc_PrintLine(nDocID,1,"");
 	Doc_PrintLines(nDocID,1,"");
 	Doc_Show(nDocID);
@@ -443,6 +448,12 @@ instance ItWr_VinosKellergeister_Mis(C_Item)
 };
 
 
+const string VinosKellergeister_Mis_1 = "Сила винограда";
+const string VinosKellergeister_Mis_2 = "... Я уже многое перепробовал, но этот плод, что был привезен мне из-за границы на прошлой неделе, превзошел все ожидания ...";
+const string VinosKellergeister_Mis_3 = "... сок этого винограда несравним с тем, что можно найти в этой части страны ...";
+const string VinosKellergeister_Mis_4 = "... пока все хорошо. Но мне все же не по себе от мысли, что может произойти, если меня застанут за моими секретными экспериментами. Не представляю, что будет делать ополчение, если они найдут меня здесь. Они могут даже засунуть меня за Барьер ...";
+const string VinosKellergeister_Mis_5 = "... Они стали подозрительными. Мне лучше оставить это занятие, пока все не успокоится немного, я вернусь к своей работе, когда буду уверен, что никто мной больше не интересуется ...";
+
 func void Use_VinosKellergeister_Mis()
 {
 	var int nDocID;
@@ -453,22 +464,22 @@ func void Use_VinosKellergeister_Mis()
 	Doc_SetMargins(nDocID,0,275,20,30,20,1);
 	Doc_SetFont(nDocID,0,FONT_BookHeadline);
 	Doc_PrintLine(nDocID,0,"");
-	Doc_PrintLines(nDocID,0,"Сила винограда");
+	Doc_PrintLines(nDocID,0,VinosKellergeister_Mis_1);
 	Doc_SetFont(nDocID,0,FONT_Book);
 	Doc_PrintLine(nDocID,0,"");
 	Doc_PrintLine(nDocID,0,"");
-	Doc_PrintLines(nDocID,0,"... Я уже многое перепробовал, но этот плод, что был привезен мне из-за границы на прошлой неделе, превзошел все ожидания ...");
+	Doc_PrintLines(nDocID,0,VinosKellergeister_Mis_2);
 	Doc_PrintLine(nDocID,0,"");
 	Doc_PrintLine(nDocID,0,"");
-	Doc_PrintLines(nDocID,0,"... сок этого винограда несравним с тем, что можно найти в этой части страны ...");
+	Doc_PrintLines(nDocID,0,VinosKellergeister_Mis_3);
 	Doc_PrintLines(nDocID,0,"");
 	Doc_SetMargins(nDocID,-1,30,20,275,20,1);
 	Doc_SetFont(nDocID,1,FONT_BookHeadline);
 	Doc_SetFont(nDocID,1,FONT_Book);
 	Doc_PrintLine(nDocID,1,"");
-	Doc_PrintLines(nDocID,1,"... пока все хорошо. Но мне все же не по себе от мысли, что может произойти, если меня застанут за моими секретными экспериментами. Не представляю, что будет делать ополчение, если они найдут меня здесь. Они могут даже засунуть меня за Барьер ...");
+	Doc_PrintLines(nDocID,1,VinosKellergeister_Mis_4);
 	Doc_PrintLine(nDocID,1,"");
-	Doc_PrintLines(nDocID,1,"... Они стали подозрительными. Мне лучше оставить это занятие, пока все не успокоится немного, я вернусь к своей работе, когда буду уверен, что никто мной больше не интересуется ...");
+	Doc_PrintLines(nDocID,1,VinosKellergeister_Mis_5);
 	Doc_Show(nDocID);
 };
 

@@ -14,6 +14,15 @@ instance ItWr_Krypta_Garon(C_Item)
 };
 
 
+const string Krypta_Garon_1 = "Все пошло прахом. Я тщетно пытался удержать Инубиса на пути добра.";
+const string Krypta_Garon_2 = "Сначала, мне показалось, что я уже мертв. Но кое-какая сила все еще осталась в старых костях Ивана.";
+const string Krypta_Garon_3 = "Инубис восстал из мертвых. Изгнанный древним орденом паладинов, теперь он ищет отмщения за свое проклятие.";
+const string Krypta_Garon_4 = "Вместе с ним многие из его последователей. Я не могу понять, как такой предводитель как Инубис мог стать таким злом.";
+const string Krypta_Garon_5 = "Я нашел его могилу в этом склепе. Но я не уверен, удастся ли мне сообщить о своей находке. Поэтому, я пишу эти строки и надеюсь, что кто-нибудь найдет их.";
+const string Krypta_Garon_6 = "Знайте. Грозный враг пытается дотянуться до праведных душ. Инубис будет не последним.";
+const string Krypta_Garon_7 = "Да спасет Иннос ваши души.";
+const string Krypta_Garon_8 = "                                 Иван";
+
 func void Use_Krypta_Garon()
 {
 	var int nDocID;
@@ -23,16 +32,16 @@ func void Use_Krypta_Garon()
 	Doc_SetFont(nDocID,-1,FONT_Book);
 	Doc_SetMargins(nDocID,-1,50,50,50,50,1);
 	Doc_PrintLine(nDocID,0,"");
-	Doc_PrintLines(nDocID,0,"Все пошло прахом. Я тщетно пытался удержать Инубиса на пути добра.");
-	Doc_PrintLines(nDocID,0,"Сначала, мне показалось, что я уже мертв. Но кое-какая сила все еще осталась в старых костях Ивана.");
-	Doc_PrintLines(nDocID,0,"Инубис восстал из мертвых. Изгнанный древним орденом паладинов, теперь он ищет отмщения за свое проклятие.");
-	Doc_PrintLines(nDocID,0,"Вместе с ним многие из его последователей. Я не могу понять, как такой предводитель как Инубис мог стать таким злом.");
-	Doc_PrintLines(nDocID,0,"Я нашел его могилу в этом склепе. Но я не уверен, удастся ли мне сообщить о своей находке. Поэтому, я пишу эти строки и надеюсь, что кто-нибудь найдет их.");
-	Doc_PrintLines(nDocID,0,"Знайте. Грозный враг пытается дотянуться до праведных душ. Инубис будет не последним.");
+	Doc_PrintLines(nDocID,0,Krypta_Garon_1);
+	Doc_PrintLines(nDocID,0,Krypta_Garon_2);
+	Doc_PrintLines(nDocID,0,Krypta_Garon_3);
+	Doc_PrintLines(nDocID,0,Krypta_Garon_4);
+	Doc_PrintLines(nDocID,0,Krypta_Garon_5);
+	Doc_PrintLines(nDocID,0,Krypta_Garon_6);
 	Doc_PrintLine(nDocID,0," ");
-	Doc_PrintLine(nDocID,0,"Да спасет Иннос ваши души.");
+	Doc_PrintLine(nDocID,0,Krypta_Garon_7);
 	Doc_PrintLine(nDocID,0,"");
-	Doc_PrintLine(nDocID,0,"                                 Иван");
+	Doc_PrintLine(nDocID,0,Krypta_Garon_8);
 	Doc_PrintLine(nDocID,0,"");
 	Doc_PrintLine(nDocID,0,"");
 	Doc_SetMargins(nDocID,-1,200,50,50,50,1);

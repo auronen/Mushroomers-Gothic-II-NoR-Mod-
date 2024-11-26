@@ -86,6 +86,14 @@ instance ItWr_Bloody_MIS(C_Item)
 };
 
 
+const string BloodMIS_1 = "Жало кровавых мух содержит смертельный яд, и ни один человек в здравом уме не возьмет его в руки.";
+const string BloodMIS_2 = "Если только он не владеет искусством извлечения жала и его обработки.";
+const string BloodMIS_3 = "Жало необходимо аккуратно разрезать острым ножом от кончика до основания.";
+const string BloodMIS_4 = "Верхний слой удаляется. Затем разрезается ткань вокруг желез.";
+const string BloodMIS_5 = "Выделяющийся при разрезе сок обладает лечебными свойствами.";
+const string BloodMIS_6 = "Однако, со временем человеческий организм становится невосприимчивым к этому лечебному зелью.";
+const string BloodMIS_7 = "Дамарок";
+
 func void UseBloodMIS()
 {
 	var int nDocID;
@@ -96,14 +104,14 @@ func void UseBloodMIS()
 	Doc_SetMargins(nDocID,-1,50,50,50,50,1);
 	Doc_PrintLine(nDocID,0,"");
 	Doc_PrintLine(nDocID,0,"");
-	Doc_PrintLines(nDocID,0,"Жало кровавых мух содержит смертельный яд, и ни один человек в здравом уме не возьмет его в руки.");
-	Doc_PrintLines(nDocID,0,"Если только он не владеет искусством извлечения жала и его обработки.");
-	Doc_PrintLines(nDocID,0,"Жало необходимо аккуратно разрезать острым ножом от кончика до основания.");
-	Doc_PrintLines(nDocID,0,"Верхний слой удаляется. Затем разрезается ткань вокруг желез.");
-	Doc_PrintLines(nDocID,0,"Выделяющийся при разрезе сок обладает лечебными свойствами.");
-	Doc_PrintLines(nDocID,0,"Однако, со временем человеческий организм становится невосприимчивым к этому лечебному зелью.");
+	Doc_PrintLines(nDocID,0,BloodMIS_1);
+	Doc_PrintLines(nDocID,0,BloodMIS_2);
+	Doc_PrintLines(nDocID,0,BloodMIS_3);
+	Doc_PrintLines(nDocID,0,BloodMIS_4);
+	Doc_PrintLines(nDocID,0,BloodMIS_5);
+	Doc_PrintLines(nDocID,0,BloodMIS_6);
 	Doc_PrintLine(nDocID,0,"");
-	Doc_PrintLine(nDocID,0,"Дамарок");
+	Doc_PrintLine(nDocID,0,BloodMIS_7);
 	Doc_Show(nDocID);
 	if(Knows_Bloodfly == FALSE)
 	{
@@ -128,6 +136,17 @@ instance ItWr_Manowar(C_Item)
 };
 
 
+const string Manowar_1 = "Клич Доминика";
+const string Manowar_2 = "Мы заслужим Его уважение.";
+const string Manowar_3 = "Иннос всегда со мной и моими братьями.";
+const string Manowar_4 = "Я убью любого, кто попытается остановить меня";
+const string Manowar_5 = "в моем сердце горит Его огонь.";
+const string Manowar_6 = "Мой меч служит только Ему.";
+const string Manowar_7 = "Его имя всегда у меня на устах.";
+const string Manowar_8 = "Любой, кто противостоит мне,";
+const string Manowar_9 = "падет от рук моих,";
+const string Manowar_10 = "ведь я воин Инноса.";
+
 func void UseManowar()
 {
 	var int nDocID;
@@ -137,17 +156,17 @@ func void UseManowar()
 	Doc_SetFont(nDocID,-1,FONT_Book);
 	Doc_SetMargins(nDocID,-1,50,50,50,50,1);
 	Doc_PrintLine(nDocID,0,"");
-	Doc_PrintLines(nDocID,0,"Клич Доминика");
+	Doc_PrintLines(nDocID,0,Manowar_1);
 	Doc_PrintLine(nDocID,0,"");
-	Doc_PrintLines(nDocID,0,"Мы заслужим Его уважение.");
-	Doc_PrintLines(nDocID,0,"Иннос всегда со мной и моими братьями.");
-	Doc_PrintLines(nDocID,0,"Я убью любого, кто попытается остановить меня");
-	Doc_PrintLines(nDocID,0,"в моем сердце горит Его огонь.");
-	Doc_PrintLines(nDocID,0,"Мой меч служит только Ему.");
-	Doc_PrintLines(nDocID,0,"Его имя всегда у меня на устах.");
-	Doc_PrintLines(nDocID,0,"Любой, кто противостоит мне,");
-	Doc_PrintLines(nDocID,0,"падет от рук моих,");
-	Doc_PrintLines(nDocID,0,"ведь я воин Инноса.");
+	Doc_PrintLines(nDocID,0,Manowar_2);
+	Doc_PrintLines(nDocID,0,Manowar_3);
+	Doc_PrintLines(nDocID,0,Manowar_4);
+	Doc_PrintLines(nDocID,0,Manowar_5);
+	Doc_PrintLines(nDocID,0,Manowar_6);
+	Doc_PrintLines(nDocID,0,Manowar_7);
+	Doc_PrintLines(nDocID,0,Manowar_8);
+	Doc_PrintLines(nDocID,0,Manowar_9);
+	Doc_PrintLines(nDocID,0,Manowar_10);
 	Doc_Show(nDocID);
 };
 

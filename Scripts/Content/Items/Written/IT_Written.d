@@ -19,6 +19,9 @@ instance StandardBrief(C_Item)
 };
 
 
+const string StandardBrief_1 = "StandardLetter";
+const string StandardBrief_2 = "Bla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla bla";
+
 func void UseStandardBrief()
 {
 	var int nDocID;
@@ -27,10 +30,10 @@ func void UseStandardBrief()
 	Doc_SetPage(nDocID,0,"letters.TGA",0);
 	Doc_SetFont(nDocID,0,FONT_BookHeadline);
 	Doc_SetMargins(nDocID,-1,50,50,50,50,1);
-	Doc_PrintLine(nDocID,0,"StandardLetter");
+	Doc_PrintLine(nDocID,0,StandardBrief_1);
 	Doc_SetFont(nDocID,0,FONT_Book);
 	Doc_PrintLine(nDocID,0,"");
-	Doc_PrintLines(nDocID,0,"Bla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla bla");
+	Doc_PrintLines(nDocID,0,StandardBrief_2);
 	Doc_Show(nDocID);
 };
 
@@ -50,6 +53,13 @@ instance StandardBuch(C_Item)
 };
 
 
+const string StandardBuch_1 = "StandardBook Page 1";
+const string StandardBuch_2 = "Bla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla bla";
+const string StandardBuch_3 = "Bla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla bBla blaBla blaBla blaBlaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla bla";
+const string StandardBuch_4 = "StandardBook Page 2";
+const string StandardBuch_5 = "Bla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla bla";
+const string StandardBuch_6 = "Bla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla bla";
+
 func void UseStandardBuch()
 {
 	var int nDocID;
@@ -60,21 +70,21 @@ func void UseStandardBuch()
 	Doc_SetMargins(nDocID,0,275,20,30,20,1);
 	Doc_SetFont(nDocID,0,FONT_BookHeadline);
 	Doc_PrintLine(nDocID,0,"");
-	Doc_PrintLines(nDocID,0,"StandardBook Page 1");
+	Doc_PrintLines(nDocID,0,StandardBuch_1);
 	Doc_SetFont(nDocID,0,FONT_Book);
 	Doc_PrintLine(nDocID,0,"");
-	Doc_PrintLine(nDocID,0,"Bla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla bla");
+	Doc_PrintLine(nDocID,0,StandardBuch_2);
 	Doc_PrintLine(nDocID,1,"");
-	Doc_PrintLines(nDocID,0,"Bla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla bBla blaBla blaBla blaBlaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla bla");
+	Doc_PrintLines(nDocID,0,StandardBuch_3);
 	Doc_SetMargins(nDocID,-1,30,20,275,20,1);
 	Doc_SetFont(nDocID,1,FONT_BookHeadline);
 	Doc_PrintLine(nDocID,1,"");
-	Doc_PrintLines(nDocID,1,"StandardBook Page 2");
+	Doc_PrintLines(nDocID,1,StandardBuch_4);
 	Doc_SetFont(nDocID,1,FONT_Book);
 	Doc_PrintLine(nDocID,1,"");
-	Doc_PrintLines(nDocID,1,"Bla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla bla");
+	Doc_PrintLines(nDocID,1,StandardBuch_5);
 	Doc_PrintLine(nDocID,1,"");
-	Doc_PrintLines(nDocID,1,"Bla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla bla");
+	Doc_PrintLines(nDocID,1,StandardBuch_6);
 	Doc_Show(nDocID);
 };
 
@@ -202,6 +212,10 @@ instance ItWr_EinhandBuch(C_Item)
 };
 
 
+const string EinhandBuch_1 = "Южное искусство обороны";
+const string EinhandBuch_2 = "Южане меньше полагаются на грубую физическую силу, нежели северяне, и отдают предпочтение ловкости. В горячем климате своей родины они предпочитают носить легкие доспехи, позволяющие двигаться более свободно. Таким образом, южане разработали стиль боя, фундаментально   отличающийся от того, к которому привыкли мы. ";
+const string EinhandBuch_3 = "Вероятно, самый известный прием, используемый южанами - это блок одноручным оружием и шаг назад. Шаг назад позволяет бойцу ослабить атакующий удар и в то же время занять превосходную стойку, из которой можно провести контратаку.";
+
 func void UseEinhandBuch()
 {
 	var int nDocID;
@@ -212,16 +226,16 @@ func void UseEinhandBuch()
 	Doc_SetMargins(nDocID,0,275,20,30,20,1);
 	Doc_SetFont(nDocID,0,FONT_BookHeadline);
 	Doc_PrintLine(nDocID,0,"");
-	Doc_PrintLines(nDocID,0,"Южное искусство обороны");
+	Doc_PrintLines(nDocID,0,EinhandBuch_1);
 	Doc_SetFont(nDocID,0,FONT_Book);
 	Doc_PrintLine(nDocID,0,"");
-	Doc_PrintLines(nDocID,0,"Южане меньше полагаются на грубую физическую силу, нежели северяне, и отдают предпочтение ловкости. В горячем климате своей родины они предпочитают носить легкие доспехи, позволяющие двигаться более свободно. Таким образом, южане разработали стиль боя, фундаментально   отличающийся от того, к которому привыкли мы. ");
+	Doc_PrintLines(nDocID,0,EinhandBuch_2);
 	Doc_SetMargins(nDocID,-1,30,20,275,20,1);
 	Doc_SetFont(nDocID,1,FONT_BookHeadline);
 	Doc_PrintLine(nDocID,1,"");
 	Doc_SetFont(nDocID,1,FONT_Book);
 	Doc_PrintLine(nDocID,1,"");
-	Doc_PrintLines(nDocID,1,"Вероятно, самый известный прием, используемый южанами - это блок одноручным оружием и шаг назад. Шаг назад позволяет бойцу ослабить атакующий удар и в то же время занять превосходную стойку, из которой можно провести контратаку.");
+	Doc_PrintLines(nDocID,1,EinhandBuch_3);
 	Doc_PrintLine(nDocID,1,"");
 	Doc_Show(nDocID);
 	if(Lerne_Einhand == FALSE)
@@ -252,6 +266,10 @@ instance ItWr_ZweihandBuch(C_Item)
 };
 
 
+const string ZweihandBuch_1 = "Двойные блоки";
+const string ZweihandBuch_2 = "Блокировка вражеского клинка при помощи двуручного оружия - прием, используемый сильными бойцами, позволяющий остановить атаку и заставить атакующего прервать свою комбинацию. ";
+const string ZweihandBuch_3 = "Результатом такого блока обычно является остановка противника, что дает возможность перехватить инициативу и нанести поражение врагу несколькими выверенными ударами.    ";
+
 func void UseZweihandBuch()
 {
 	var int nDocID;
@@ -262,11 +280,11 @@ func void UseZweihandBuch()
 	Doc_SetMargins(nDocID,0,275,20,30,20,1);
 	Doc_SetFont(nDocID,0,FONT_BookHeadline);
 	Doc_PrintLine(nDocID,0,"");
-	Doc_PrintLines(nDocID,0,"Двойные блоки");
+	Doc_PrintLines(nDocID,0,ZweihandBuch_1);
 	Doc_SetFont(nDocID,0,FONT_Book);
 	Doc_PrintLine(nDocID,0,"");
 	Doc_PrintLine(nDocID,0,"");
-	Doc_PrintLines(nDocID,0,"Блокировка вражеского клинка при помощи двуручного оружия - прием, используемый сильными бойцами, позволяющий остановить атаку и заставить атакующего прервать свою комбинацию. ");
+	Doc_PrintLines(nDocID,0,ZweihandBuch_2);
 	Doc_SetMargins(nDocID,-1,30,20,275,20,1);
 	Doc_SetFont(nDocID,1,FONT_BookHeadline);
 	Doc_PrintLine(nDocID,1,"");
@@ -274,7 +292,7 @@ func void UseZweihandBuch()
 	Doc_SetFont(nDocID,1,FONT_Book);
 	Doc_PrintLine(nDocID,1,"");
 	Doc_PrintLine(nDocID,1,"");
-	Doc_PrintLines(nDocID,1,"Результатом такого блока обычно является остановка противника, что дает возможность перехватить инициативу и нанести поражение врагу несколькими выверенными ударами.    ");
+	Doc_PrintLines(nDocID,1,ZweihandBuch_3);
 	Doc_Show(nDocID);
 	if(Lerne_Zweihand == FALSE)
 	{

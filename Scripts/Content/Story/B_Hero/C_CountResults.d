@@ -364,6 +364,8 @@ func void B_CompetitorGiveMrmsToConstantino(var C_NPC slf)
 	if (Hlp_GetInstanceID(slf) == Hlp_GetInstanceID(Cmp_Till))	{	MR_Counter_Till += sum;};
 };
 
+const string B_Show_ScoreList_1 = "          Очки участников конкурса";
+
 func void B_Show_ScoreList()
 {
 	var int nDocID;
@@ -374,7 +376,7 @@ func void B_Show_ScoreList()
 	Doc_SetPage(nDocID,0,"letters.TGA",0);
 	Doc_SetMargins(nDocID,-1,70,70,70,70,1);
 	Doc_SetFont(nDocID,-1,FONT_Calligraphic);
-	Doc_PrintLine(nDocID,0,"          Очки участников конкурса");
+	Doc_PrintLine(nDocID,0,B_Show_ScoreList_1);
 	Doc_PrintLine(nDocID,0,"~~~~~~~~~~~~~~~~~~~~~~~~~~~");
 	Doc_PrintLine(nDocID,0,"");
 	if (C_HeroIs_Sarah())	{	sum = C_GetHeroScore();	} else {sum = MR_Counter_Sarah;};

@@ -14,6 +14,12 @@ instance ITWr_Addon_Hinweis_02(C_Item)
 };
 
 
+const string Hinweis_02_1 = "Парни,";
+const string Hinweis_02_2 = "Лу пропал в болотах. Вероятно, его съели болотные акулы.";
+const string Hinweis_02_3 = "Но что еще хуже - ключ от двери пропал вместе с ним.";
+const string Hinweis_02_4 = "Кто найдет его, сможет забрать вещи Лу.";
+const string Hinweis_02_5 = "Снаф";
+
 func void Use_Hinweis_02()
 {
 	var int nDocID;
@@ -25,14 +31,14 @@ func void Use_Hinweis_02()
 	Doc_PrintLine(nDocID,0,"");
 	Doc_SetFont(nDocID,0,FONT_Book);
 	Doc_PrintLine(nDocID,0,"");
-	Doc_PrintLine(nDocID,0,"Парни,");
+	Doc_PrintLine(nDocID,0,Hinweis_02_1);
 	Doc_PrintLines(nDocID,0,"");
-	Doc_PrintLines(nDocID,0,"Лу пропал в болотах. Вероятно, его съели болотные акулы.");
-	Doc_PrintLines(nDocID,0,"Но что еще хуже - ключ от двери пропал вместе с ним.");
+	Doc_PrintLines(nDocID,0,Hinweis_02_2);
+	Doc_PrintLines(nDocID,0,Hinweis_02_3);
 	Doc_PrintLines(nDocID,0,"");
-	Doc_PrintLines(nDocID,0,"Кто найдет его, сможет забрать вещи Лу.");
+	Doc_PrintLines(nDocID,0,Hinweis_02_4);
 	Doc_PrintLine(nDocID,0,"");
-	Doc_PrintLine(nDocID,0,"Снаф");
+	Doc_PrintLine(nDocID,0,Hinweis_02_5);
 	Doc_PrintLine(nDocID,0,"");
 	Doc_Show(nDocID);
 };
@@ -56,6 +62,11 @@ instance ITWr_Addon_Health_04(C_Item)
 };
 
 
+const string Heilrezept_04_1 = "Создание лечебного зелья:";
+const string Heilrezept_04_2 = "Необходим один луговой горец и три лечебные эссенции.";
+const string Heilrezept_04_3 = "Перемешать и варить согласно рецепту лечебного эликсира.";
+const string Heilrezept_04_4 = "Это зелье может создать только алхимик, знающий рецепт лечебного эликсира.";
+
 func void Use_Heilrezept_04()
 {
 	var int nDocID;
@@ -76,13 +87,13 @@ func void Use_Heilrezept_04()
 	Doc_PrintLine(nDocID,0,"");
 	Doc_SetFont(nDocID,0,FONT_Book);
 	Doc_PrintLine(nDocID,0,"");
-	Doc_PrintLines(nDocID,0,"Создание лечебного зелья:");
+	Doc_PrintLines(nDocID,0,Heilrezept_04_1);
 	Doc_PrintLine(nDocID,0,"");
-	Doc_PrintLines(nDocID,0,"Необходим один луговой горец и три лечебные эссенции.");
-	Doc_PrintLines(nDocID,0,"Перемешать и варить согласно рецепту лечебного эликсира.");
+	Doc_PrintLines(nDocID,0,Heilrezept_04_2);
+	Doc_PrintLines(nDocID,0,Heilrezept_04_3);
 	Doc_PrintLines(nDocID,0,"");
 	Doc_PrintLines(nDocID,0,"");
-	Doc_PrintLines(nDocID,0,"Это зелье может создать только алхимик, знающий рецепт лечебного эликсира.");
+	Doc_PrintLines(nDocID,0,Heilrezept_04_4);
 	Doc_PrintLine(nDocID,0,"");
 	Doc_PrintLine(nDocID,0,"");
 	Doc_PrintLine(nDocID,0,"");
@@ -108,6 +119,11 @@ instance ITWr_Addon_Mana_04(C_Item)
 };
 
 
+const string Manarezept_04_1 = "Создание зелья маны:";
+const string Manarezept_04_2 = "Необходим один луговой горец и три эссенции маны.";
+const string Manarezept_04_3 = "Перемешать и варить согласно рецепту эликсира маны.";
+const string Manarezept_04_4 = "Это зелье может создать только алхимик, знающий рецепт эликсира маны.";
+
 func void Use_Manarezept_04()
 {
 	var int nDocID;
@@ -128,13 +144,13 @@ func void Use_Manarezept_04()
 	Doc_PrintLine(nDocID,0,"");
 	Doc_SetFont(nDocID,0,FONT_Book);
 	Doc_PrintLine(nDocID,0,"");
-	Doc_PrintLines(nDocID,0,"Создание зелья маны:");
+	Doc_PrintLines(nDocID,0,Manarezept_04_1);
 	Doc_PrintLine(nDocID,0,"");
-	Doc_PrintLines(nDocID,0,"Необходим один луговой горец и три эссенции маны.");
-	Doc_PrintLines(nDocID,0,"Перемешать и варить согласно рецепту эликсира маны.");
+	Doc_PrintLines(nDocID,0,Manarezept_04_2);
+	Doc_PrintLines(nDocID,0,Manarezept_04_3);
 	Doc_PrintLines(nDocID,0,"");
 	Doc_PrintLines(nDocID,0,"");
-	Doc_PrintLines(nDocID,0,"Это зелье может создать только алхимик, знающий рецепт эликсира маны.");
+	Doc_PrintLines(nDocID,0,Manarezept_04_4);
 	Doc_PrintLine(nDocID,0,"");
 	Doc_PrintLine(nDocID,0,"");
 	Doc_PrintLine(nDocID,0,"");
@@ -157,6 +173,14 @@ instance ITWr_Addon_Lou_Rezept(C_Item)
 };
 
 
+const string LouRezept_1 = "Рецепт Молота Лу";
+const string LouRezept_2 = "Ингредиенты для приготовления Молота:";
+const string LouRezept_3 = "Возьмите бутылку воды, две репы и немного болотной травы.";
+const string LouRezept_4 = "Добавьте перемолотый зуб болотной акулы.";
+const string LouRezept_5 = "Поместите все в бутылку, добавьте рома и вскипятите.";
+const string LouRezept_6 = "Удачи.";
+const string LouRezept_7 = "Старик, рассказавший мне этот рецепт, предупреждал, что лучше не дышать испарениями этого пойла!";
+
 func void UseLouRezept()
 {
 	var int nDocID;
@@ -167,18 +191,18 @@ func void UseLouRezept()
 	Doc_SetFont(nDocID,0,FONT_BookHeadline);
 	Doc_SetMargins(nDocID,-1,50,50,50,50,1);
 	Doc_SetFont(nDocID,0,FONT_Book);
-	Doc_PrintLine(nDocID,0,"Рецепт Молота Лу");
+	Doc_PrintLine(nDocID,0,LouRezept_1);
 	Doc_PrintLine(nDocID,0,"");
-	Doc_PrintLine(nDocID,0,"Ингредиенты для приготовления Молота:");
+	Doc_PrintLine(nDocID,0,LouRezept_2);
 	Doc_PrintLine(nDocID,0,"");
-	Doc_PrintLines(nDocID,0,"Возьмите бутылку воды, две репы и немного болотной травы.");
-	Doc_PrintLines(nDocID,0,"Добавьте перемолотый зуб болотной акулы.");
-	Doc_PrintLines(nDocID,0,"Поместите все в бутылку, добавьте рома и вскипятите.");
+	Doc_PrintLines(nDocID,0,LouRezept_3);
+	Doc_PrintLines(nDocID,0,LouRezept_4);
+	Doc_PrintLines(nDocID,0,LouRezept_5);
 	Doc_PrintLine(nDocID,0,"");
-	Doc_PrintLine(nDocID,0,"Удачи.");
+	Doc_PrintLine(nDocID,0,LouRezept_6);
 	Doc_PrintLine(nDocID,0,"");
 	Doc_PrintLine(nDocID,0,"");
-	Doc_PrintLines(nDocID,0,"Старик, рассказавший мне этот рецепт, предупреждал, что лучше не дышать испарениями этого пойла!");
+	Doc_PrintLines(nDocID,0,LouRezept_7);
 	Doc_Show(nDocID);
 };
 
@@ -198,6 +222,11 @@ instance ITWr_Addon_Lou_Rezept2(C_Item)
 };
 
 
+const string LouRezept2_1 = "Двойной Молот Лу";
+const string LouRezept2_2 = "Возьмите Молот Лу и перегоните его еще раз.";
+const string LouRezept2_3 = "Этот напиток способен приготовить только очень опытный винокур.";
+const string LouRezept2_4 = "Если за это возьмется дилетант, он рискует не ослепнуть и даже лишиться жизни.";
+
 func void UseLouRezept2()
 {
 	var int nDocID;
@@ -208,13 +237,13 @@ func void UseLouRezept2()
 	Doc_SetFont(nDocID,0,FONT_BookHeadline);
 	Doc_SetMargins(nDocID,-1,50,50,50,50,1);
 	Doc_SetFont(nDocID,0,FONT_Book);
-	Doc_PrintLine(nDocID,0,"Двойной Молот Лу");
+	Doc_PrintLine(nDocID,0,LouRezept2_1);
 	Doc_PrintLine(nDocID,0,"");
-	Doc_PrintLines(nDocID,0,"Возьмите Молот Лу и перегоните его еще раз.");
+	Doc_PrintLines(nDocID,0,LouRezept2_2);
 	Doc_PrintLine(nDocID,0,"");
-	Doc_PrintLines(nDocID,0,"Этот напиток способен приготовить только очень опытный винокур.");
+	Doc_PrintLines(nDocID,0,LouRezept2_3);
 	Doc_PrintLine(nDocID,0,"");
-	Doc_PrintLines(nDocID,0,"Если за это возьмется дилетант, он рискует не ослепнуть и даже лишиться жизни.");
+	Doc_PrintLines(nDocID,0,LouRezept2_4);
 	Doc_Show(nDocID);
 };
 
@@ -234,6 +263,13 @@ instance ITWr_Addon_Piratentod(C_Item)
 };
 
 
+const string RezeptPiratentod_1 = "Быстрая селедка";
+const string RezeptPiratentod_2 = "Пойло для настоящих мужчин";
+const string RezeptPiratentod_3 = "Как всегда, необходима бутылка воды. Добавьте немного рома и свежую рыбу.";
+const string RezeptPiratentod_4 = "Как только жидкость станет желтой, выньте рыбу и добавьте пучок";
+const string RezeptPiratentod_5 = "свежесорванной снеппер-травы.";
+const string RezeptPiratentod_6 = "Осторожно! Это пойло обладает очень сильным эффектом.";
+
 func void UseRezeptPiratentod()
 {
 	var int nDocID;
@@ -243,16 +279,16 @@ func void UseRezeptPiratentod()
 	Doc_SetPage(nDocID,0,"letters.TGA",0);
 	Doc_SetFont(nDocID,0,FONT_BookHeadline);
 	Doc_SetMargins(nDocID,-1,50,50,50,50,1);
-	Doc_PrintLine(nDocID,0,"Быстрая селедка");
+	Doc_PrintLine(nDocID,0,RezeptPiratentod_1);
 	Doc_SetFont(nDocID,0,FONT_Book);
 	Doc_PrintLine(nDocID,0,"");
-	Doc_PrintLine(nDocID,0,"Пойло для настоящих мужчин");
+	Doc_PrintLine(nDocID,0,RezeptPiratentod_2);
 	Doc_PrintLine(nDocID,0,"");
-	Doc_PrintLines(nDocID,0,"Как всегда, необходима бутылка воды. Добавьте немного рома и свежую рыбу.");
-	Doc_PrintLines(nDocID,0,"Как только жидкость станет желтой, выньте рыбу и добавьте пучок");
-	Doc_PrintLines(nDocID,0,"свежесорванной снеппер-травы.");
+	Doc_PrintLines(nDocID,0,RezeptPiratentod_3);
+	Doc_PrintLines(nDocID,0,RezeptPiratentod_4);
+	Doc_PrintLines(nDocID,0,RezeptPiratentod_5);
 	Doc_PrintLine(nDocID,0,"");
-	Doc_PrintLines(nDocID,0,"Осторожно! Это пойло обладает очень сильным эффектом.");
+	Doc_PrintLines(nDocID,0,RezeptPiratentod_6);
 	Doc_PrintLine(nDocID,0,"");
 	Doc_Show(nDocID);
 };
@@ -290,6 +326,14 @@ instance ItWr_Addon_AxtAnleitung(C_Item)
 };
 
 
+const string AxtAnleitung_1 = "Бандитский топор";
+const string AxtAnleitung_2 = "Одноручный топор";
+const string AxtAnleitung_3 = "Этот топор может выковать любой, знакомый с основами кузнечного дела.";
+const string AxtAnleitung_4 = "Необходимы два куска раскаленной сырой стали.";
+const string AxtAnleitung_5 = "Один кусок руды и три зуба волка, снеппера или подобного им зверя.";
+const string AxtAnleitung_6 = "Перекуйте руду и зубы вместе со сталью на наковальне.";
+const string AxtAnleitung_7 = "Такой топор очень легок и наносит значительный урон.";
+
 func void UseAxtAnleitung()
 {
 	var int nDocID;
@@ -302,18 +346,18 @@ func void UseAxtAnleitung()
 	Doc_SetPage(nDocID,0,"letters.TGA",0);
 	Doc_SetFont(nDocID,0,FONT_BookHeadline);
 	Doc_SetMargins(nDocID,-1,50,50,50,50,1);
-	Doc_PrintLine(nDocID,0,"Бандитский топор");
+	Doc_PrintLine(nDocID,0,AxtAnleitung_1);
 	Doc_SetFont(nDocID,0,FONT_Book);
-	Doc_PrintLine(nDocID,0,"Одноручный топор");
+	Doc_PrintLine(nDocID,0,AxtAnleitung_2);
 	Doc_PrintLine(nDocID,0,"");
 	Doc_PrintLine(nDocID,0,"");
-	Doc_PrintLines(nDocID,0,"Этот топор может выковать любой, знакомый с основами кузнечного дела.");
-	Doc_PrintLines(nDocID,0,"Необходимы два куска раскаленной сырой стали.");
-	Doc_PrintLines(nDocID,0,"Один кусок руды и три зуба волка, снеппера или подобного им зверя.");
+	Doc_PrintLines(nDocID,0,AxtAnleitung_3);
+	Doc_PrintLines(nDocID,0,AxtAnleitung_4);
+	Doc_PrintLines(nDocID,0,AxtAnleitung_5);
 	Doc_PrintLine(nDocID,0,"");
-	Doc_PrintLine(nDocID,0,"Перекуйте руду и зубы вместе со сталью на наковальне.");
+	Doc_PrintLine(nDocID,0,AxtAnleitung_6);
 	Doc_PrintLine(nDocID,0,"");
-	Doc_PrintLine(nDocID,0,"Такой топор очень легок и наносит значительный урон.");
+	Doc_PrintLine(nDocID,0,AxtAnleitung_7);
 	Doc_PrintLines(nDocID,0,"");
 	Doc_Show(nDocID);
 };

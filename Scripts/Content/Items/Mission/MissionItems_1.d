@@ -65,6 +65,15 @@ instance ItWr_ManaRezept(C_Item)
 };
 
 
+const string ManaRezept_1 = "Магические зелья";
+const string ManaRezept_2 = "Чтобы сварить магическое зелье, опытному алхимику необходимы:";
+const string ManaRezept_3 = "Огненная крапива";
+const string ManaRezept_4 = "Огненная трава";
+const string ManaRezept_5 = "Огненный корень";
+const string ManaRezept_6 = "Также ему понадобится";
+const string ManaRezept_7 = "Луговой горец";
+const string ManaRezept_8 = "Мастер Неорас";
+
 func void Use_ManaRezept()
 {
 	var int nDocID;
@@ -74,17 +83,17 @@ func void Use_ManaRezept()
 	Doc_SetFont(nDocID,-1,FONT_Book);
 	Doc_SetMargins(nDocID,-1,50,50,50,50,1);
 	Doc_PrintLine(nDocID,0,"");
-	Doc_PrintLine(nDocID,0,"Магические зелья");
+	Doc_PrintLine(nDocID,0,ManaRezept_1);
 	Doc_PrintLine(nDocID,0,"");
-	Doc_PrintLines(nDocID,0,"Чтобы сварить магическое зелье, опытному алхимику необходимы:");
+	Doc_PrintLines(nDocID,0,ManaRezept_2);
 	Doc_PrintLine(nDocID,0,"");
-	Doc_PrintLine(nDocID,0,"Огненная крапива");
-	Doc_PrintLine(nDocID,0,"Огненная трава");
-	Doc_PrintLine(nDocID,0,"Огненный корень");
-	Doc_PrintLines(nDocID,0,"Также ему понадобится");
-	Doc_PrintLine(nDocID,0,"Луговой горец");
+	Doc_PrintLine(nDocID,0,ManaRezept_3);
+	Doc_PrintLine(nDocID,0,ManaRezept_4);
+	Doc_PrintLine(nDocID,0,ManaRezept_5);
+	Doc_PrintLines(nDocID,0,ManaRezept_6);
+	Doc_PrintLine(nDocID,0,ManaRezept_7);
 	Doc_PrintLine(nDocID,0,"");
-	Doc_PrintLine(nDocID,0,"Мастер Неорас");
+	Doc_PrintLine(nDocID,0,ManaRezept_8);
 	Doc_SetMargins(nDocID,-1,200,50,50,50,1);
 	Doc_Show(nDocID);
 };
@@ -106,6 +115,14 @@ instance ItWr_Passierschein(C_Item)
 };
 
 
+const string Passierschein_1 = "     Пропуск";
+const string Passierschein_2 = "            Хоринис    ";
+const string Passierschein_3 = "        Этот документ дает право";
+const string Passierschein_4 = "        свободного прохода по всему нижнему";
+const string Passierschein_5 = "        Хоринису на неограниченный период времени.";
+const string Passierschein_6 = "            Лариус";
+const string Passierschein_7 = "            королевский губернатор";
+
 func void UsePassierschein()
 {
 	var int nDocID;
@@ -115,20 +132,20 @@ func void UsePassierschein()
 	Doc_SetFont(nDocID,-1,FONT_BookHeadline);
 	Doc_SetMargins(nDocID,-1,50,50,50,50,1);
 	Doc_PrintLine(nDocID,0,"");
-	Doc_PrintLine(nDocID,0,"     Пропуск");
-	Doc_PrintLine(nDocID,0,"            Хоринис    ");
+	Doc_PrintLine(nDocID,0,Passierschein_1);
+	Doc_PrintLine(nDocID,0,Passierschein_2);
 	Doc_PrintLine(nDocID,0,"");
 	Doc_PrintLine(nDocID,0,"");
 	Doc_SetFont(nDocID,0,FONT_Book);
-	Doc_PrintLine(nDocID,0,"        Этот документ дает право");
-	Doc_PrintLine(nDocID,0,"        свободного прохода по всему нижнему");
-	Doc_PrintLine(nDocID,0,"        Хоринису на неограниченный период времени.");
+	Doc_PrintLine(nDocID,0,Passierschein_3);
+	Doc_PrintLine(nDocID,0,Passierschein_4);
+	Doc_PrintLine(nDocID,0,Passierschein_5);
 	Doc_PrintLine(nDocID,0,"");
 	Doc_PrintLine(nDocID,0,"");
 	Doc_PrintLine(nDocID,0,"");
-	Doc_PrintLine(nDocID,0,"            Лариус");
+	Doc_PrintLine(nDocID,0,Passierschein_6);
 	Doc_PrintLine(nDocID,0,"");
-	Doc_PrintLine(nDocID,0,"            королевский губернатор");
+	Doc_PrintLine(nDocID,0,Passierschein_7);
 	Doc_PrintLine(nDocID,0,"");
 	Doc_PrintLine(nDocID,0,"");
 	Doc_PrintLine(nDocID,0,"");
@@ -623,6 +640,14 @@ instance ItWr_Schuldenbuch(C_Item)
 };
 
 
+const string SchuldBuch_1 = "Сделки и долги";
+const string SchuldBuch_2 = "Я, мастер Торбен, плотник Хориниса, должен глубокоуважаемому Лемару 200 золотых монет.";
+const string SchuldBuch_3 = "             Торбен";
+const string SchuldBuch_4 = "Я, Корагон, трактирщик Хориниса, должен глубокоуважаемому Лемару 150 золотых монет.";
+const string SchuldBuch_5 = "             Корагон";
+const string SchuldBuch_6 = "Я, Ханна, владелица отеля Хориниса, должна глубокоуважаемому Лемару 250 золотых монет.";
+const string SchuldBuch_7 = "               Ханна";
+
 func void UseSchuldBuch()
 {
 	// откл.
@@ -634,26 +659,26 @@ func void UseSchuldBuch()
 	Doc_SetMargins(nDocID,0,275,20,30,20,1);
 	Doc_SetFont(nDocID,0,FONT_BookHeadline);
 	Doc_PrintLine(nDocID,0,"");
-	Doc_PrintLines(nDocID,0,"Сделки и долги");
+	Doc_PrintLines(nDocID,0,SchuldBuch_1);
 	Doc_SetFont(nDocID,0,FONT_Book);
 	Doc_PrintLine(nDocID,0,"");
-	Doc_PrintLines(nDocID,0,"Я, мастер Торбен, плотник Хориниса, должен глубокоуважаемому Лемару 200 золотых монет.");
+	Doc_PrintLines(nDocID,0,SchuldBuch_2);
 	Doc_PrintLine(nDocID,0,"");
-	Doc_PrintLine(nDocID,0,"             Торбен");
+	Doc_PrintLine(nDocID,0,SchuldBuch_3);
 	Doc_PrintLine(nDocID,0,"");
 	Doc_PrintLine(nDocID,0,"");
-	Doc_PrintLines(nDocID,0,"Я, Корагон, трактирщик Хориниса, должен глубокоуважаемому Лемару 150 золотых монет.");
+	Doc_PrintLines(nDocID,0,SchuldBuch_4);
 	Doc_PrintLine(nDocID,0,"");
-	Doc_PrintLine(nDocID,0,"             Корагон");
+	Doc_PrintLine(nDocID,0,SchuldBuch_5);
 	Doc_PrintLine(nDocID,0,"");
 	Doc_SetMargins(nDocID,-1,30,20,275,20,1);
 	Doc_SetFont(nDocID,1,FONT_Book);
 	Doc_PrintLine(nDocID,1,"");
 	Doc_PrintLine(nDocID,1,"");
 	Doc_PrintLine(nDocID,1,"");
-	Doc_PrintLines(nDocID,1,"Я, Ханна, владелица отеля Хориниса, должна глубокоуважаемому Лемару 250 золотых монет.");
+	Doc_PrintLines(nDocID,1,SchuldBuch_6);
 	Doc_PrintLine(nDocID,1,"");
-	Doc_PrintLine(nDocID,1,"               Ханна");
+	Doc_PrintLine(nDocID,1,SchuldBuch_7);
 	Doc_PrintLines(nDocID,1,"");
 	Doc_Show(nDocID);
 };
