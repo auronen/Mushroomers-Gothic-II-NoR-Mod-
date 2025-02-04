@@ -200,7 +200,7 @@
 "Scripts/Content/Story/Dialoge/City/Oberstadt/DIA_Vlk_Richter.d:92","Ты должна заплатить штраф за свои преступления.","Musisz zapłacić grzywnę za swoje przestępstwa.","","False","dia_richter_verdict_14_07","",""
 "Scripts/Content/Story/Dialoge/City/Oberstadt/DIA_Vlk_Richter.d:96","Итак, ты вновь обвиняешься в преступлении.","Ponownie oskarżono cię o przestępstwo.","","False","dia_richter_verdict_14_08","",""
 "Scripts/Content/Story/Dialoge/City/Oberstadt/DIA_Vlk_Richter.d:97","В состоянии ли ты оплатить штраф, покрывающий твои прегрешения?","Czy jesteś w stanie zapłacić grzywnę za swoje przewinienia?","","False","dia_richter_verdict_14_09","",""
-"Scripts/Content/Story/Dialoge/City/Oberstadt/DIA_Vlk_Richter.d:101","У меня нет столько денег.","","","False","dia_richter_verdict.dia_richter_verdict_nopay","Info_AddChoice",""
+"Scripts/Content/Story/Dialoge/City/Oberstadt/DIA_Vlk_Richter.d:101","У меня нет столько денег.","Nie mam na tyle złota.","","False","dia_richter_verdict.dia_richter_verdict_nopay","Info_AddChoice",""
 "Scripts/Content/Story/Dialoge/City/Oberstadt/DIA_Vlk_Richter.d:107","Я хочу заплатить штраф.","Chcę zapłacić grzywnę.","","False","dia_richter_verdict_pay_03_00","",""
 "Scripts/Content/Story/Dialoge/City/Oberstadt/DIA_Vlk_Richter.d:109","Я хочу заплатить штраф.","Chcę zapłacić grzywnę.","","False","dia_richter_verdict_pay_07_00","",""
 "Scripts/Content/Story/Dialoge/City/Oberstadt/DIA_Vlk_Richter.d:111","Я хочу заплатить штраф.","Chcę zapłacić grzywnę.","","False","dia_richter_verdict_pay_10_00","",""
