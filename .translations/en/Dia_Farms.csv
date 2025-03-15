@@ -596,7 +596,7 @@
 "Scripts/Content/Story/Dialoge/Farms/DIA_BAU_Vino.d:135","Голова гудит... Белиарова селезенка, не надо было туда добавлять царский щавель!","","","False","dia_vino_howau_05_01","",""
 "Scripts/Content/Story/Dialoge/Farms/DIA_BAU_Vino.d:138","Ну, по крайней мере, я могу ровно стоять.","","","False","dia_vino_howau_05_04","",""
 "Scripts/Content/Story/Dialoge/Farms/DIA_BAU_Vino.d:160","Эй, пст! Подойди сюда!","","","False","dia_vino_letter_05_00","",""
-"Scripts/Content/Story/Dialoge/Farms/DIA_BAU_Vino.d:161","","","","","xxx","",""
+"Scripts/Content/Story/Dialoge/Farms/DIA_BAU_Vino.d:161","","","","False","xxx","",""
 "Scripts/Content/Story/Dialoge/Farms/DIA_BAU_Vino.d:164","Что такое?","","","False","dia_vino_letter_03_01","",""
 "Scripts/Content/Story/Dialoge/Farms/DIA_BAU_Vino.d:166","Чего тебе?","","","False","dia_vino_letter_07_01","",""
 "Scripts/Content/Story/Dialoge/Farms/DIA_BAU_Vino.d:168","Чего тебе?","","","False","dia_vino_letter_10_01","",""
