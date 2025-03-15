@@ -856,7 +856,7 @@
 "Scripts/Content/Story/Dialoge/OUT/DIA_OUT_OldShepherd.d:76","Не откажусь.","","","False","dia_oldshepherd_howau_yes_14_00","",""
 "Scripts/Content/Story/Dialoge/OUT/DIA_OUT_OldShepherd.d:78","Не откажусь.","","","False","dia_oldshepherd_howau_yes_16_00","",""
 "Scripts/Content/Story/Dialoge/OUT/DIA_OUT_OldShepherd.d:80","Вот, угощайся.","","","False","dia_oldshepherd_howau_yes_01_01","",""
-"Scripts/Content/Story/Dialoge/OUT/DIA_OUT_OldShepherd.d:84","","","","","xxx","",""
+"Scripts/Content/Story/Dialoge/OUT/DIA_OUT_OldShepherd.d:84","","","","False","xxx","",""
 "Scripts/Content/Story/Dialoge/OUT/DIA_OUT_OldShepherd.d:86","Нравится?","","","False","dia_oldshepherd_howau_yes_01_02","",""
 "Scripts/Content/Story/Dialoge/OUT/DIA_OUT_OldShepherd.d:88","Какой-то вкус странный...","","","False","dia_oldshepherd_howau.dia_oldshepherd_howau_dislike","Info_AddChoice",""
 "Scripts/Content/Story/Dialoge/OUT/DIA_OUT_OldShepherd.d:89","Да, очень.","","","False","dia_oldshepherd_howau.dia_oldshepherd_howau_like","Info_AddChoice",""
