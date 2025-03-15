@@ -788,7 +788,7 @@
 "Scripts/Content/Story/Dialoge/City/Harbour/DIA_VLK_Ignaz.d:155","Знаешь, я передумала. Выглядит как-то подозрительно...","Wiesz co, zmieniłam zdanie. Ta mikstura wygląda trochę podejrzanie...","","False","dia_ignaz_askrecipe_nodrink_16_00","",""
 "Scripts/Content/Story/Dialoge/City/Harbour/DIA_VLK_Ignaz.d:157","Твое недоверие оскорбляет меня до глубины души.","Twoja nieufność uraża mnie do głębi.","","False","dia_ignaz_askrecipe_nodrink_14_01","",""
 "Scripts/Content/Story/Dialoge/City/Harbour/DIA_VLK_Ignaz.d:158","Но раз ты сомневаешься, верни мне зелье. Я найду другого счастливчика.","Ale jeśli w to wątpisz, oddaj mi miksturę. Znajdę innego chętnego.","","False","dia_ignaz_askrecipe_nodrink_14_02","",""
-"Scripts/Content/Story/Dialoge/City/Harbour/DIA_VLK_Ignaz.d:165","","","","","xxx","",""
+"Scripts/Content/Story/Dialoge/City/Harbour/DIA_VLK_Ignaz.d:165","","","","False","xxx","",""
 "Scripts/Content/Story/Dialoge/City/Harbour/DIA_VLK_Ignaz.d:167","(восторженно) Работает! Раны затягиваются на глазах!..","To działa! Rany goją się błyskawicznie!","","False","dia_ignaz_askrecipe_drink_14_00","",""
 "Scripts/Content/Story/Dialoge/City/Harbour/DIA_VLK_Ignaz.d:169","Оох, ну и гадость... Голова раскалывается... И все тело ломит!","Och, co to za paskudztwo! Głowa mi pęka... I całe ciało ogarnia boleść!","","False","dia_ignaz_askrecipe_drink_03_01","",""
 "Scripts/Content/Story/Dialoge/City/Harbour/DIA_VLK_Ignaz.d:171","Оох, ну и гадость... Голова раскалывается... И все тело ломит!","Och, co to za paskudztwo! Głowa mi pęka... I całe ciało ogarnia boleść!","","False","dia_ignaz_askrecipe_drink_07_01","",""
