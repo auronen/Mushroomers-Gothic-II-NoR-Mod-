@@ -1282,3 +1282,4 @@
 "Scripts/Content/Items/Written/IT_Written.d:246","Двойные блоки","Bloki dwuręczne","","False","itwr_zweihandbuch.description","",""
 "Scripts/Content/Items/Written/IT_Written.d:247","Книга, посвященная искусству","Księga poświęcona sztuce","","False","itwr_zweihandbuch.text[2]","",""
 "Scripts/Content/Items/Written/IT_Written.d:248","сражения двуручным оружием.","walki bronią dwuręczną","","False","itwr_zweihandbuch.text[3]","",""
+"Scripts/Content/Items/Armor/IT_Addon_Amulette.d:41","Амулет Франко","Amulet Franka","","False","ItAm_Addon_Franco.description","",""
