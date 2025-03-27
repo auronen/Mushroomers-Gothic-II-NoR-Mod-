@@ -60,10 +60,10 @@ func void Use_Mushroom_Stone()
 				self.attribute[ATR_STRENGTH] = 1;
 			};
 			if (self.aivar[AIV_Gender] == MALE)	{
-				AI_PrintScreen("Мой желудок! Как будто камень проглотил!",-1,-1,FONT_Screen,2);
+				AI_PrintScreen(PRINT_Mushroom_Stone_M,-1,-1,FONT_Screen,2);
 			}
 			else	{
-				AI_PrintScreen("Мой желудок! Как будто камень проглотила!",-1,-1,FONT_Screen,2);
+				AI_PrintScreen(PRINT_Mushroom_Stone_F,-1,-1,FONT_Screen,2);
 			};
 			AI_PrintScreen(CS3(NAME_Bonus_Str, " ", IntToString(AntiBonus_STR_Mr_Stone)),-1,61,FONT_ScreenSmall,3);
 		};
@@ -627,7 +627,7 @@ func void Use_Mushroom_Trident()
 			};
 		};
 		MR_Eaten[MR_Trident] += 1;
-		AI_PrintScreen("Я чувствую слабость", -1, -1, FONT_Screen,2);
+		AI_PrintScreen(PRINT_Weak, -1, -1, FONT_Screen,2);
 		if (self.attribute[ATR_STRENGTH] > 10)	{
 			self.attribute[ATR_STRENGTH] -= 10;
 			POISON_Trident_STR += 10;
@@ -724,7 +724,7 @@ func void Use_Mushroom_DragonTears()
 		};
 		MR_Eaten[MR_DragonTears] += 1;
 		POISON_DrgTears_Timer = POISON_DrgTears_Time_Max;
-		AI_PrintScreen("Жжется! ЖЖЕТСЯ!!! Внутри все горит!",-1,YPOS_InInventory,FONT_Screen,5);
+		AI_PrintScreen(PRINT_Weak,-1,YPOS_InInventory,FONT_Screen,5);
 		Wld_PlayEffect("POISON_DRGTEARS",self,self,1,0,0,FALSE);
 		B_LogNote_Poison();
 		B_LogNote(TOPIC_Poison,TOPIC_Poison_DrgTears);

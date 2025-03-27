@@ -109,7 +109,7 @@ func string GetRandWay(var string WP_name)
 //туманник вызывает провалы памяти
 func void B_Foggy_Templapse()
 {
-	PrintScreen("Какое странное чувство...",-1,-1,FONT_Screen,3);
+	PrintScreen(PRINT_StrangeFeeling,-1,-1,FONT_Screen,3);
 	Wld_PlayEffect("POISON_FOG_SLOW",hero,hero,0,0,0,FALSE);
 	Wld_PlayEffect("SLEEP_BLEND", hero,hero,0,0,0,FALSE);
 	AI_Wait(hero, 2);
@@ -121,7 +121,7 @@ func void B_Foggy_Templapse()
 	var int time; time = 15 + Hlp_Random(60);
 	B_SetTimePlus(0,time);
 	AI_Wait(hero, 1.5);
-	AI_PrintScreen("Где я?",-1,-1,FONT_Screen,3);
+	AI_PrintScreen(PRINT_Where,-1,-1,FONT_Screen,3);
 };
 
 

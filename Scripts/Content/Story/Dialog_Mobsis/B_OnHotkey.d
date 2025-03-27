@@ -116,12 +116,12 @@ func void player_hotkey_lame_potion()
 			}
 			else
 			{
-				Print("Нет зелий маны!");
+				Print(PRINT_NO_MANA_POTIONS);
 			};
 		}
 		else
 		{
-			Print("Уже максимальная мана!");
+			Print(PRINT_MANA_ALREADY_MAX);
 		};
 	};
 };
@@ -170,12 +170,12 @@ func void player_hotkey_lame_heal()
 			}
 			else
 			{
-				Print("Нет лечебных зелий!");
+				Print(PRINT_NO_HP_POTIONS);
 			};
 		}
 		else
 		{
-			Print("Уже максимальное здоровье!");
+			Print(PRINT_HP_ALREADY_MAX);
 		};
 	};
 };

@@ -271,7 +271,7 @@ func void DIA_Regis_Rupert_Binge_OpenEyes()
 func void DIA_Regis_Rupert_Binge_TryGetUp()
 {
 	AI_PlayAniBS(hero,"T_SLEEPGROUND_2_STAND",BS_STAND);
-	AI_PrintScreen("Моя голова...",-1,-1,FONT_Screen,2);
+	AI_PrintScreen(PRINT_MyHead,-1,-1,FONT_Screen,2);
 	AI_PlayAniBS(hero,"T_STAND_2_WOUNDED",BS_LIE);
 	Info_ClearChoices(DIA_Regis_Rupert_Binge_Wake);
 	Info_AddChoice(DIA_Regis_Rupert_Binge_Wake,"(попытаться еще раз)",DIA_Regis_Rupert_Binge_GetUp);
@@ -279,7 +279,7 @@ func void DIA_Regis_Rupert_Binge_TryGetUp()
 func void DIA_Regis_Rupert_Binge_GetUp()
 {
 	AI_PlayAniBS(hero,"T_WOUNDED_2_STAND",BS_STAND);
-	AI_PrintScreen("Мама, роди меня обратно...",-1,-1,FONT_Screen,2);
+	AI_PrintScreen(PRINT_Mother,-1,-1,FONT_Screen,2);
 	AI_StopProcessInfos(self);
 //	Wld_StopEffect("DRUNK");
 	Rupert_Binge = -3;

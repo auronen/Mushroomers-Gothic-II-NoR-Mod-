@@ -85,10 +85,10 @@ func void EVT_GOBBOSTEALER_FUNC()
 		CreateInvItems		(slf,weaponInst, 1);
 	}
 	else	{
-		AI_PrintScreen("Грязный гоблиненыш пытался обокрасть меня!",-1,30,FONT_ScreenSmall, 3);
-		AI_PrintScreen("Хорошо, что при мне не было ничего ценного.",-1,35,FONT_ScreenSmall, 3);
+		AI_PrintScreen(PRINT_GobboThief1,-1,30,FONT_ScreenSmall, 3);
+		AI_PrintScreen(PRINT_GobboThief2,-1,35,FONT_ScreenSmall, 3);
 		B_Say_Overlay(hero,hero,"$HANDSOFF");
 		return;
 	};
-	AI_PrintScreen("Этот паршивый гоблин обокрал меня!",-1,30,FONT_Screen, 3);
+	AI_PrintScreen(PRINT_GobboThief3,-1,30,FONT_Screen, 3);
 };

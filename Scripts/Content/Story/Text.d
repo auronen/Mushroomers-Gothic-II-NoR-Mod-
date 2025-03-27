@@ -1067,3 +1067,22 @@ const string NAME_Map = "Карта";
 const string NAME_Recipe = "Рецепт";
 
 const string PRINT_NadjaTooClose = "Нет! Надя слишком близко.";
+
+const string PRINT_Mushroom_Stone_M = "Мой желудок! Как будто камень проглотил!";
+const string PRINT_Mushroom_Stone_F = "Мой желудок! Как будто камень проглотила!";
+const string PRINT_Weak = "Я чувствую слабость";
+const string PRINT_StrangeFeeling = "Какое странное чувство...";
+const string PRINT_Where = "Где я?";
+const string PRINT_MyHead = "Моя голова...";
+const string PRINT_Mother = "Мама, роди меня обратно...";
+
+const string PRINT_GobboThief1 = "Грязный гоблиненыш пытался обокрасть меня!";
+const string PRINT_GobboThief2 = "Хорошо, что при мне не было ничего ценного.";
+const string PRINT_GobboThief3 = "Этот паршивый гоблин обокрал меня!";
+
+const string PRINT_Achievement = "Получено достижение: ";
+
+const string PRINT_NO_MANA_POTIONS = "Нет зелий маны!";
+const string PRINT_MANA_ALREADY_MAX = "Уже максимальная мана!";
+const string PRINT_NO_HP_POTIONS = "Нет лечебных зелий!";
+const string PRINT_HP_ALREADY_MAX = "Уже максимальное здоровье!";

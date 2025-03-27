@@ -122,7 +122,7 @@ func void B_GiveAchievement(var string title, var string content)
 	Log_CreateTopic(TOPIC_Achieve, LOG_NOTE);
 	Log_AddEntry(TOPIC_Achieve,CS3(title, ": ", content));
 	AI_Snd_Play(hero,"SFX_INNOSEYE");
-	AI_PrintScreen("Получено достижение: ", 2, 2 + ACHIEV_POS_Y*2, FONT_ScreenSmall, 5);
+	AI_PrintScreen(PRINT_Achievement, 2, 2 + ACHIEV_POS_Y*2, FONT_ScreenSmall, 5);
 	AI_PrintScreen(title, 2, 5 + ACHIEV_POS_Y*2, FONT_ScreenSmall, 5);
 	ACHIEV_POS_Y += 5;
 };
